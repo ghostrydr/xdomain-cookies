@@ -3,15 +3,16 @@
   "version": "1.0.8",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contently/xdomain-cookies"
+    "url": "https://github.com/romeo-whiskey/xdomain-cookies.git"
   },
   "description": "JS class for cross-domain shared cookie (via iframe shim)",
   "scripts": {
     "test": "gulp test",
     "dev": "node test/test_webserver.js"
   },
-  "homepage": "http://contently.github.io/xdomain-cookies/",
+  "homepage": "https://romeo-whiskey.github.io/xdomain-cookies/",
   "author": "Evan Carothers",
+  "contributors": ["Russell Wilson <russell@romeo-whiskey.com>"],
   "license": "CC",
   "devDependencies": {
     "chai": "^3.5.0",
