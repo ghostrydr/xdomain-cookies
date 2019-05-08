@@ -1,7 +1,9 @@
 
 #Cross-Domain Cookie Library
 
-[![Build Status](https://semaphoreci.com/api/v1/ghostrydr/xdomain-cookies/branches/master/shields_badge.svg)](https://semaphoreci.com/ghostrydr/xdomain-cookies)
+[![Build Status][build-status-image]][build-status-url] [![NPM version][npm-version-image]][npm-url]
+
+<!-- [![NPM downloads][npm-downloads-image]][downloads-url] -->
 
 This library is intended for cases where you have scripts running on different domains (i.e. domain-a.com, domain-b.com) that need to be able to set/share a cookie value across those domains. A few example use cases would be a third-party script that wants to set/share a user identifier across both domains, or a company that wants to track if a user signed up for a newsletter across both their main website and blog that resides on a different TLD. This library also offers a way of writing data to a cookie from a third-party script
 
@@ -128,3 +130,14 @@ You can then see the example working by visiting http://shared_cookie_test.com:3
 Additinoally to test SSL/secure cookie functionality, a self-signed cert is included for shared_cookie_test.com and you can verify by visiting https://shared_cookie_test.com:3002/test_page.html (which uses shared_cookie_iframe.com:3003 as an iframe host with another self-signed cert). Please note your browser may deem these as insecure at first, so you will need to click to approve them as trusted in your browser.
 
 When developing locally you can lint/test/build the library by running `gulp build`
+
+
+
+
+[npm-url]: https://npmjs.org/package/xdomain-cookies
+[npm-version-image]: http://img.shields.io/npm/v/xdomain-cookies.svg?style=flat
+[npm-downloads-image]: http://img.shields.io/npm/dm/xdomain-cookies.svg?style=flat
+[downloads-url]: https://npmcharts.com/compare/xdomain-cookies?minimal=true
+
+[build-status-url]: https://semaphoreci.com/ghostrydr/xdomain-cookies
+[build-status-image]: https://semaphoreci.com/api/v1/ghostrydr/xdomain-cookies/branches/master/shields_badge.svg
