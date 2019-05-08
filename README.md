@@ -1,5 +1,5 @@
 
-#Cross-Domain Cookie Library
+# Cross-Domain Cookie Library
 
 [![Build Status](https://semaphoreci.com/api/v1/ghostrydr/xdomain-cookies/branches/master/shields_badge.svg)](https://semaphoreci.com/ghostrydr/xdomain-cookies)
 
