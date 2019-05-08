@@ -1,6 +1,8 @@
 
 #Cross-Domain Cookie Library
 
+[![Build Status](https://semaphoreci.com/api/v1/ghostrydr/xdomain-cookies/branches/master/shields_badge.svg)](https://semaphoreci.com/ghostrydr/xdomain-cookies)
+
 This library is intended for cases where you have scripts running on different domains (i.e. domain-a.com, domain-b.com) that need to be able to set/share a cookie value across those domains. A few example use cases would be a third-party script that wants to set/share a user identifier across both domains, or a company that wants to track if a user signed up for a newsletter across both their main website and blog that resides on a different TLD. This library also offers a way of writing data to a cookie from a third-party script
 
 The library leverages 2 files to achieve this - a javascript file you load/run on the page, and an HTML file that gets loaded onto that same page in an iframe by the JS file. The JS & HTML files both must be served from the same domain/location (such as an s3 bucket). The cookies are pushed to the iframe (via postMessage), written as first-party cookies (and localstorage if available) on the remote trusted domain, and are made available for reading/writing locally via a convenient API.
